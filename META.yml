@@ -1,0 +1,29 @@
+---
+abstract: 'Rewrite of IO::All'
+author:
+  - 'Ingy döt Net'
+build_requires:
+  ExtUtils::MakeMaker: 6.36
+configure_requires:
+  ExtUtils::MakeMaker: 6.36
+distribution_type: module
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: Alt::IO::All::new
+name: Alt-IO-All-new
+no_index:
+  directory:
+    - inc
+    - t
+resources:
+  homepage: https://github.com/ingydotnet/io-all-pm/tree
+  license: http://dev.perl.org/licenses/
+  repository:
+    type: git
+    url: git://github.com/ingydotnet/io-all-pm.git
+    web: https://github.com/ingydotnet/io-all-pm/tree
+version: 0.01
