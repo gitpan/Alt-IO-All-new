@@ -18,6 +18,7 @@ name: Alt-IO-All-new
 no_index:
   directory:
     - inc
+    - lib/IO
     - t
 resources:
   homepage: https://github.com/ingydotnet/io-all-pm/tree
@@ -26,4 +27,4 @@ resources:
     type: git
     url: git://github.com/ingydotnet/io-all-pm.git
     web: https://github.com/ingydotnet/io-all-pm/tree
-version: 0.01
+version: 0.02
