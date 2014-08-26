@@ -1,15 +1,6 @@
-##
-# name:      IO::All
-# author:    Ingy döt Net
-# abstract:  I Owe All to Larry Wall!
-# license:   perl
-# copyright: 2004, 2006, 2008, 2010, 2012
-
+use strict; use warnings;
 package IO::All;
-use IO::All::OO;
-use strict;
-
-our $VERSION = 0.01;
+use IO::All::Base;
 
 has location => ();
 has plugin_classes => (

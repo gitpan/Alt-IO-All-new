@@ -1,11 +1,15 @@
-use TestML -run;
+use TestML;
 
+TestML->new(
+    testml => join('', <DATA>),
+)->run;
 
 __END__
-%TestML 1.0
+%TestML 0.1.0
 
-Plan = 1;
+# Plan = 1;
 
+Label = 'Skipping all for now'
 1 == 1;
 
 # *perl.eval.manifest == *with;

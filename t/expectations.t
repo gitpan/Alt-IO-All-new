@@ -1,20 +1,33 @@
-use TestML -run, -bridge => 'main';
+use TestML;
 
-sub setup {
-    shift;
-    my $cmd = (shift)->value;
-    `$cmd`;
-}
-sub eval_perl {
-    shift;
-    my $perl = (shift)->value;
-    # eval $perl;
-    my $expect = (shift)->value;
-    die $expect;
+TestML->new(
+    testml => join('', <DATA>),
+    bridge => 'TestMLBridge',
+)->run;
+
+{
+    package TestMLBridge;
+    use TestML::Base;
+    extends 'TestML::Bridge';
+    use TestML::Util;
+
+    sub setup {
+        my ($self, $cmd) = @_;
+        $cmd = $cmd->value;
+        `$cmd`;
+        str;
+    }
+    sub eval_perl {
+        my ($self, $setup, $perl, $expect) = @_;
+        $perl = $perl->value;
+        # eval $perl;
+        $expect = $expect->value;
+        die $expect;
+    }
 }
 
 __DATA__
-%TestML 1.0
+%TestML 0.1.0
 
 Plan = 4;
 

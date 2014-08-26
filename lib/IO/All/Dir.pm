@@ -1,12 +1,5 @@
-##
-# name:      IO::All::Dir
-# author:    Ingy döt Net
-# abstract:  Directory Plugin For IO::All
-# license:   perl
-# copyright: 2004, 2006, 2008, 2010, 2012
-
 package IO::All::Dir;
-use IO::All::OO;
+use IO::All::Base;
 extends 'IO::All::Filesys';
 
 # Upgrade from IO::All to IO::All::Dir
