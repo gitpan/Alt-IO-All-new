@@ -1,3 +1,6 @@
+0.05 Thu Aug 28 11:35:49 PDT 2014
+ - Don't index IO::All* modules
+
 0.04 Tue Aug 26 22:33:12 PDT 2014
  - Add lib 'inc' for TestML tests
 

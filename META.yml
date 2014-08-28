@@ -18,10 +18,11 @@ no_index:
     - t
     - xt
     - example
+    - lib/IO
 requires:
   perl: v5.8.1
 resources:
   bugtracker: https://github.com/ingydotnet/alt-io-all-new-pm/issues
   homepage: https://github.com/ingydotnet/alt-io-all-new-pm
   repository: https://github.com/ingydotnet/alt-io-all-new-pm.git
-version: '0.04'
+version: '0.05'

@@ -18,7 +18,8 @@
          "inc",
          "t",
          "xt",
-         "example"
+         "example",
+         "lib/IO"
       ]
    },
    "prereqs" : {
@@ -50,6 +51,6 @@
          "web" : "https://github.com/ingydotnet/alt-io-all-new-pm"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
 
